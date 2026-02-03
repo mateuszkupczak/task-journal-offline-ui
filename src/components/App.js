@@ -98,7 +98,7 @@ export default function App() {
             weekdays={weekdays}
             months={months}
             isTaskRelevant={isTaskRelevant}
-            onTaskClick={() => setOpenTaskId(task.id)}
+            onClick={() => setOpenTaskId(task.id)}
           />
         ))}
       </TaskList>

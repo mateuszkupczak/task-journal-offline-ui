@@ -3,12 +3,12 @@ export default function Task({
   weekdays,
   months,
   isTaskRelevant,
-  onTaskClick,
+  onClick,
 }) {
   return (
     <div
       className={`contents task ${isTaskRelevant(task) ? "task-relevant" : ""}`}
-      onClick={onTaskClick}
+      onClick={onClick}
     >
       <p>
         <strong>{task.name}</strong>
